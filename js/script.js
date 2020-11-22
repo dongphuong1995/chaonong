@@ -30,12 +30,122 @@ $(window).load(function () {
 })
 
 
+$(window).load(function () {
+    $('.thesame_height_2').heightLine();
+})
+
 $(document).ready(function(){
 
     // menu
     $('#gnav_sp').click(function(){
         $('#gnav').slideToggle();
         $('#gnav_sp').toggleClass('active');
+    });
+
+
+    // slide trang chu 
+    $('.slide_trangchu').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots : true,
+        fade : true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 6000,
+        pauseOnHover : false
+    });
+
+
+    // slide phan hoi
+    
+    $('#slide_phanhoi ul').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots : true,
+        fade : true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 6000,
+        pauseOnHover : false
+    });
+    // slide trang chu san pham 
+
+
+    $('#slide_sanpham_3').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                }
+            }
+        ]
+
+    });
+
+    $('.trangchu_sanpham1 .prev').click(function () {
+        $('#slide_sanpham_3').slick('slickPrev');
+    });
+
+    $('.trangchu_sanpham1 .next').click(function () {
+        $('#slide_sanpham_3').slick('slickNext');
+    });
+
+
+
+
+    // slide trang chu tin tuc 
+
+    $('#slide_trangchu_tintuc').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                }
+            }
+        ]
+
+    });
+
+    $('.trangchu_news .prev').click(function () {
+        $('#slide_trangchu_tintuc').slick('slickPrev');
+    });
+
+    $('.trangchu_news .next').click(function () {
+        $('#slide_trangchu_tintuc').slick('slickNext');
     });
 
     // slide tuyen dung 
