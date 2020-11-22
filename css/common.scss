@@ -50,7 +50,9 @@ body{
 .mt10{
     margin-top: 10px;
 }
-
+.mt0{
+    margin-top: 0 !important;
+}
 .bold{
     font-weight: bold;
 }
@@ -96,6 +98,57 @@ body{
         border-radius: 25px;
         text-shadow:-1px -1px 0 #fff,
         1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+}
+
+.slide_trangchu{
+    font-family: $cookie;
+    position: relative;
+    h2{
+        font-size: 72px;
+        color: #ffb021;
+        margin-bottom: 10px;
+    }
+    .des{
+        font-size: 30px;
+        color: #fff;
+        background-color: #ffb021;
+        display: inline-block;
+        padding: 5px 20px 9px;
+        border-radius: 25px;
+    }
+    .item{
+        position: relative;
+        .co_1370{
+            text-align: right;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .slick-dots{
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%,0);
+        display: flex !important;
+        li{
+            background-color: #d3bba7;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin: 0 20px;
+            button{
+                display: none;
+            }
+            &.slick-active{
+                background-color: #f1c40f;
+            }
+        }
     }
 }
 
@@ -190,6 +243,7 @@ h4{
 .des_16{
     font-size: 16px;
     font-family: $poppins;
+    line-height: 1.7;
 }
 
 .time_write{
@@ -824,6 +878,185 @@ footer{
                 margin-bottom: 10px;
             }
         }
+    }
+}
+
+.gioithieu_2{
+    background-color: #fbfbfb;
+    padding: 60px 0 40px;
+    .des_16{
+        max-width: 1044px;
+        margin: 30px auto;
+    }
+}
+
+.why{
+    text-align: right;
+    margin-top: 50px;
+    .col_670{
+        &:nth-child(1){
+            margin-top: 100px;
+        }
+    }
+    .item{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            width: 83.5%;
+        }
+        .right{
+            width: 12.98%;
+        }
+    }
+}
+
+
+.menu{
+    margin-top: 50px;
+    .col_670{
+        position: relative;
+    }
+    .ct_menu{
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        text-align: right;
+        color: #fff;
+        .tit{
+            font-size: 30px;
+            font-family: $cookie;
+        }
+
+    }
+    .more{
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        font-size: 16px;
+        font-family: $poppins;
+        color: #fff;
+        background-color: #ffb021;
+        border-radius: 25px;
+        padding: 10px 20px 12px;
+    }
+}
+
+.trangchu_sanpham1{
+    background-image: url(../images/bg_sanpham_2.jpg);
+    padding: 60px 0;
+    margin-top: 80px;
+    .co_1370{
+        position: relative;
+    }
+    .prev{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 0;
+        z-index: 99;
+    }
+    .next{
+        position: absolute;
+        transform: translate(50%,-50%);
+        top: 50%;
+        right: 0;
+        z-index: 99;
+    }
+    .slick-slide{
+        background-color: #fff;
+        // max-width: 320px;
+        padding: 20px 25px 10px 25px;
+        // width: 100% !important;
+        margin: 0 15px;
+        border-radius: 15px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.phanhoi{
+    background-color: #f3f2f0;
+    padding: 70px 0 60px;
+    background-image: url(../images/bg_trangchu.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    #slide_phanhoi{
+        width: 100%;
+        max-width: 810px;
+        margin: 30px auto 0;
+        text-align: center;
+        color: #fff;
+        background-color: #fcbd4a;
+        padding: 35px;
+        border-radius: 25px;
+        .slick-slide{
+            img{
+                display: inline-block;
+            }
+        }
+        .slick-dots{
+            background-color: #fff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            margin-top: 30px;
+            display: inline-flex !important;
+            li{
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                border: 1px solid #000;
+                &:not(:first-child){
+                    margin-left: 20px;
+                }
+                button{
+                    display: none;
+                }
+                &.slick-active{
+                    background-color: #ffb021;
+                    border-color: #ffb021;
+                }
+            }
+        }
+        
+    }
+    .tit_18{
+        margin: 20px 0;
+    }
+}
+
+.trangchu_news{
+    margin-top: 70px;
+    .co_1370{
+        position: relative;
+    }
+    .prev{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 0;
+        z-index: 99;
+    }
+    .next{
+        position: absolute;
+        transform: translate(50%,-50%);
+        top: 50%;
+        right: 0;
+        z-index: 99;
+    }
+    .slick-slide{
+        padding: 20px 25px 10px 25px;
+        border: 1px solid #ffb021;
+        margin: 0 15px;
+        border-radius: 15px;
+        img{
+            width: 100%;
+        }
+    }
+    #slide_trangchu_tintuc{
+        margin-top: 20px;
     }
 }
 
