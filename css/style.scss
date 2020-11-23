@@ -69,6 +69,14 @@
     display: none;
 }
 
+.news_detail{
+    hr{
+        background-color: #000;
+        height: 1px;
+        margin-bottom: 20px;
+    }
+}
+
 
 @media (min-width:1201px) and (max-width:1500px){
     .slide_tuyendung{
@@ -424,6 +432,9 @@
 
 @media (max-width:768px){
 
+    #breadcrumb{
+        margin: 4vw 0;
+    }
     .mt15_sp_m{
         margin-top: 10vw;
     }
@@ -909,6 +920,12 @@
         }
         #slide_trangchu_tintuc{
             padding-bottom: 5vw;
+        }
+    }
+
+    .news_detail{
+        hr{
+            margin-bottom: 3vw;
         }
     }
 }
