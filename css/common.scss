@@ -644,11 +644,25 @@ header{
                 &:nth-child(1){
                     margin-right: 50px;
                 }
+                &:hover{
+                    color: #e74c3c;
+                    svg{
+                        color: #e74c3c;
+                    }
+                }
             }
         }
         .right{
             svg{
                 margin-left: 10px;
+            }
+            a{
+                &:hover{
+                    color: #e74c3c;
+                    svg{
+                        color: #e74c3c;
+                    }
+                }
             }
         }
     }
