@@ -759,28 +759,28 @@ header .top .left svg {
   margin-right: 5px;
 }
 
+header .top .left a {
+  color: #3498db;
+}
+
 header .top .left a:nth-child(1) {
   margin-right: 50px;
 }
 
-header .top .left a:hover {
-  color: #e74c3c;
-}
-
-header .top .left a:hover svg {
-  color: #e74c3c;
+header .top .left a svg {
+  color: #3498db;
 }
 
 header .top .right svg {
   margin-left: 10px;
 }
 
-header .top .right a:hover {
-  color: #e74c3c;
+header .top .right a {
+  color: #3498db;
 }
 
-header .top .right a:hover svg {
-  color: #e74c3c;
+header .top .right a svg {
+  color: #3498db;
 }
 
 header .logo {

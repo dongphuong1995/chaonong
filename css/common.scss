@@ -644,12 +644,16 @@ header{
                 &:nth-child(1){
                     margin-right: 50px;
                 }
-                &:hover{
-                    color: #e74c3c;
-                    svg{
-                        color: #e74c3c;
-                    }
+                color: #3498db;
+                svg{
+                    color :#3498db
                 }
+                // &:hover{
+                //     color: #e74c3c;
+                //     svg{
+                //         color: #e74c3c;
+                //     }
+                // }
             }
         }
         .right{
@@ -657,12 +661,16 @@ header{
                 margin-left: 10px;
             }
             a{
-                &:hover{
-                    color: #e74c3c;
-                    svg{
-                        color: #e74c3c;
-                    }
+                color: #3498db;
+                svg{
+                    color: #3498db;
                 }
+                // &:hover{
+                //     color: #e74c3c;
+                //     svg{
+                //         color: #e74c3c;
+                //     }
+                // }
             }
         }
     }
